@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     *
+     {
+        margin: 0px;
+        /* background-color: white; */
+        position: relative;
+     }
+    .heading
+    {
+         /* background-color: aqua; */ 
+        width:100%;
+        height: 100px;
+        position: relative;
+    }
+    .zomato
+    {
+     
+        width: 10%;
+        height: 50px;
+        position: relative;
+        top: 25px;
+        left: 200px;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    [alt ="img1"]
+    {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: 2px;
+    }
+    [alt="img2"]
+    {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        top: 10px;
+        left: 160px;
+
+    }
+    .downlist
+    {
+        width:660px;
+        height: 50px;
+        border: 0.2px solid lightgray;
+        /* background-color: black; */
+        border-radius: 10px ;
+        position:absolute;
+        top: 19px;
+        left: 360px;
+        box-shadow: 1px 1px 2px lightgray,-1px -1px 2px lightgray,-1px 1px 2px lightgray,1px -1px 1px lightgray;
+    }
+    .downlist select{
+
+        width:150px;
+        height: 40px;
+        position: absolute;
+        top: 8px;
+        left: 30px;
+        border: 0.2px;
+        outline:0.9px;
+        /* border: 0px;
+        outline: 0px; */
+        opacity: 0.9;
+    }
+    input
+    {
+       
+        width:400px;
+        height: 30px;
+        position: absolute;
+        top: 30px;
+        left: 40%;
+        border: 0px;
+        outline: 0px;
+    }
+    .login
+    {
+        width:100px;
+        height: 40px;
+        position: absolute;
+        top: 10px;
+        left: 70%;
+        /* background-color: blue; */
+        text-align: center;
+        font-size: 20px;
+        font-style:normal;
+        opacity: 0.6;
+    }
+    .sign
+    {
+        width:100px;
+        height: 40px;
+        position: absolute;
+         opacity: 0.6;
+        text-align: center;
+        font-size: 20px;
+        font-style:normal;
+        top: 10px;
+        left: 79%;
+    }
+    .div1
+    {
+        width: 50%;
+        height: 100px;
+        /* background-color: aqua; */
+        position: absolute;
+        left: 200px;
+        top: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    .common
+    {
+        width: 29%;
+        height: 100px;
+        /* background-color:black; */
+       margin: 2px;
+       color: red;
+       display: flex;
+       justify-content: right;
+       font-size: 25px;
+       align-items: center;
+    }
+    img
+    {
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+         left: 10px;
+         top: 9px;
+    }
+    .in 
+    {
+        height: 70px;
+        width: 70px;
+        background-color:lightgray;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        border-radius: 50%;
+    }
+    .common:hover  
+    {
+        color: orange;
+        /* background-color: orange; */
+    }
+    .common  .in:hover
+    {
+        background-color:palegoldenrod;
+    }
+    .common .in1:hover{
+        background-color:lightblue;
+    }
+    .div2
+    {
+        width: 40%;
+        height: 80px;
+        /* background-color: brown; */
+        position: absolute;
+        left: 200px;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+    }
+    .child
+    {
+        width: 90px;
+        height: 40px;
+        margin: 2px;
+        /* background-color: aqua; */
+        border-radius: 10px;
+        text-align:center;
+        border: 0.99px solid black;
+        /* outline: 1px;
+        border: 0.6px; */
+        padding: 0px 2px;
+    }
+    select
+    {
+        width: 100px;
+        height: 40px;
+        padding: 10px 10px;
+        border-radius: 10px;
+        top: 0px;
+        opacity: 1;
+    
+    }
+    h3{
+        font-size: 15px;
+        font-style: normal;
+        font-weight: lighter;
+        top: 10px;
+        opacity: 0.6;
+        
+    }
+    .child:hover
+    {
+       background-color: lightgrey;
+    }
+    [select]
+    {
+        background-color: lightgrey;
+    }
+    .inspiration
+    {
+        width:100%;
+        height: 390px;
+        background-color: lightgray;
+        position: relative;
+        top: 90px;
+    }
+    .text1
+    {
+        width: 80%;
+        height: 270px;
+        /* background-color: blueviolet; */
+        position:absolute;
+        left: 200px;
+        top: 80px;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+    #i{
+        font-size: 30px;
+        font-style: normal;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        top: 0px;
+    }
+    .common1
+    {
+        width: 150px;
+        height: 150px;
+        background-color: black;
+        margin: 1px;
+        border-radius: 50%;
+        
+    }
+    .food1
+    {
+        background-image: url(https://b.zmtcdn.com/data/dish_images/d19a31d42d5913ff129cafd7cec772f81639737697.png);
+        background-repeat: no-repeat;
+        background-size: 150px 150px;
+    }
+    .food2
+    {
+        background-image: url(https://b.zmtcdn.com/data/dish_images/197987b7ebcd1ee08f8c25ea4e77e20f1634731334.png);
+        background-repeat: no-repeat;
+        background-size: 150px 150px;
+    }
+    .food3
+    {
+        background-image: url(https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png);
+        background-repeat: no-repeat;
+        background-size: 150px 150px;
+    }
+    .food4
+    {
+        background-image: url(https://b.zmtcdn.com/data/o2_assets/52eb9796bb9bcf0eba64c643349e97211634401116.png);
+        background-repeat: no-repeat;
+        background-size: 150px 150px;
+    }
+       
+    .food5
+    {
+        background-image: url(https://b.zmtcdn.com/data/o2_assets/e444ade83eb22360b6ca79e6e777955f1632716661.png);
+        background-repeat: no-repeat;
+        background-size: 150px 150px;
+        
+    }
+    .food6
+    {
+        background-image: url(https://b.zmtcdn.com/data/dish_images/ccb7dc2ba2b054419f805da7f05704471634886169.png);
+        background-repeat: no-repeat;
+        background-size: 150px 150px;
+    }
+    .textcommon
+    {
+        width: 100px;
+        height: 50px;
+        /* background-color:yellow; */
+        margin: 1px;
+        position: absolute;
+        top: 160px;
+        left: 30px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .brands
+    {
+        width: 500px;
+        height: 40px;
+        /* background-color: blue; */
+        position: relative;
+        left: 200px;
+        top: 120px;
+    }
+    .topbrands
+    {
+        width: 80%;
+        height: 350px;
+        /* background-color:black; */
+        position:absolute;
+        left: 200px;
+        top: 105%;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+       
+    }
+    .common2
+    {
+        width: 150px;
+        height: 150px;
+        background-color:white;
+        margin: 1px;
+        border-radius: 50%;
+        position: relative;
+        border: 1px solid lightgrey;
+      
+    }
+    .b1
+    {
+        background-image:url(https://b.zmtcdn.com/data/brand_creatives/logos/3a58b67479fd290ff96996002438736e_1672389253.png);
+        background-repeat: no-repeat;
+        background-size: 150px 150px;
+        background-color: white
+
+    }
+    .brands2{
+        background-image: url(https://b.zmtcdn.com/data/brand_creatives/logos/560b209a689eefa9feb367b5d5604097_1611382952.png
+);
+        background-repeat: no-repeat;
+        background-size: 140px 130px;
+    }
+    .brands3{
+       background-image: url(https://b.zmtcdn.com/data/brand_creatives/logos/b5068f3dfc0118b7b8a3cd0429ac953f_1696570852.png);
+        background-repeat: no-repeat;
+        background-size: 150px 150px;
+    }
+    .brands4{
+       background-image: url(https://b.zmtcdn.com/data/brand_creatives/logos/fe5db95ae85292933996d4043f600d3b_1611320738.png);
+        background-repeat: no-repeat;
+        background-size: 150px 150px;
+        background-color: black;
+    }
+    .brands5{
+       background-image: url(https://b.zmtcdn.com/data/brand_creatives/logos/6a11fd0f30c9fd9ceaff2f5b21f61d23_1617188103.png);
+        background-repeat: no-repeat;
+        background-size: 140px 140px;
+    }
+    .brands6{
+       background-image: url(https://b.zmtcdn.com/data/brand_creatives/logos/f9eef3c0e4df808bd5590eefdf5c9c1d_1677580200.png);
+        background-repeat: no-repeat;
+        background-size: 150px 150px;
+    }
+    .brandname
+    {
+        width: 120px;
+        height: 30px;
+        /* background-color:rgb(255, 0, 43); */
+        margin: 1px;
+        position: absolute;
+        top: 160px;
+        left: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .tim1
+    {
+        width: 60px;
+        height: 20px;
+         /* background-color:darkorange; */
+        margin: 1px;
+        position: absolute;
+        top: 200px;
+        left: 50px;
+        font-size: 15px;
+        text-align: center; 
+        opacity: 0.7;
+        
+    }
+    .im1
+    {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+    }
+    .resturant
+    {
+        width: 500px;
+        height: 40px;
+        /* background-color:blueviolet; */
+        position: relative;
+        left: 200px;
+        top: 450px;
+    }
+    .inside
+    {
+        width: 1200px;
+        height: 400px;
+        /* background-color: crimson; */
+        position: absolute;
+        top: 175%;
+        left: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .common3
+    {
+        width: 360px;
+        height: 400px;
+        /* background-color: aqua; */
+         margin: 10px;
+        /* float: left;
+        left: 20px; */ 
+        left: 20px;
+        border: 2px solid white;
+    }
+    .common4 
+    {
+        width: 340px;
+        height: 250px;
+        background-color: coral;
+        left: 10px;
+        top: 20px;
+        border-radius: 20px;
+    }
+    .abc1
+    {
+      background-image:url(https://b.zmtcdn.com/data/pictures/chains/8/19750718/adbc8df7e3d886309909aa6b3091abab_o2_featured_v2.jpg?output-format=webp);
+      background-size: 340px 250px ;
+      background-repeat: no-repeat;
+    }
+    .abc2
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/chains/0/22460/045fa3e9db1354d1675baacc778cd33b_o2_featured_v2.jpg?output-format=webp);
+        background-size:340px 250px ;
+        background-repeat: no-repeat;
+    }
+    .abc3
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/chains/4/21144/43572a0522b6d5c8951a08850ee85d6a_o2_featured_v2.jpg?output-format=webp);
+        background-size:340px 250px ;
+        background-repeat: no-repeat;
+    }
+    .abc4
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/chains/3/19389263/75fb72db1f40ce9c2d894f0c431c1ea9_o2_featured_v2.jpg);
+        background-size: 340px 250px ;
+      background-repeat: no-repeat;
+    }
+    .abc5
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/chains/6/21176/3eaa34537c383cd11672dfbc8f55bd33_o2_featured_v2.jpg);
+        background-size: 340px 250px ;
+      background-repeat: no-repeat;
+    }
+    .abc6
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/chains/9/19967339/6452a3e0f87a67fea3d3cb59d887f21e_o2_featured_v2.jpg);
+        background-size: 340px 250px ;
+      background-repeat: no-repeat;
+    }
+    .abc7
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/chains/7/20797/7c440b99b4140cce88505e64bb690b0f_o2_featured_v2.jpg);
+        background-size: 340px 250px ;
+      background-repeat: no-repeat;
+    }
+    .abc8
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/chains/4/19193204/8c49ba335683507ba6ddee2dc84966e8_o2_featured_v2.jpg);
+        background-size: 340px 250px ;
+      background-repeat: no-repeat;
+    }
+    .abc9
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/chains/3/20723/a6c42cc3212d88f9b8741d4162efd197_o2_featured_v2.jpg);
+        background-size: 340px 250px ;
+      background-repeat: no-repeat;
+    }
+    .a1 
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/chains/3/21573/91dec4cc975d989bc1b9370a729c41f5_o2_featured_v2.jpg);
+        background-size: 340px 250px ;
+      background-repeat: no-repeat;
+    }
+    .a2 {
+        background-image:url(https://b.zmtcdn.com/data/pictures/chains/1/19639581/73754a6fbea6d97551ba65254e2f7816_o2_featured_v2.jpg);
+        background-size: 340px 250px ;
+      background-repeat: no-repeat;
+    }
+    .a3 
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/chains/5/20785/2b323e5f0e5a7d3ff64b03b4f8c8b00c_o2_featured_v2.jpg);
+        background-size: 340px 250px ;
+      background-repeat: no-repeat;
+    }
+    .a4 
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/1/18655631/341141e2205d8e39c37c5ffbe0e03472_o2_featured_v2.jpg);
+        background-size: 340px 250px ;
+      background-repeat: no-repeat;
+    }
+    .a5
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/chains/2/18287242/33711303715dd41b5e266f2aa7773102_o2_featured_v2.jpg);
+        background-size: 340px 250px ;
+      background-repeat: no-repeat;
+    }
+    .a6 
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/chains/3/22833/1645e84b43f476310e0cb01e400c4978_o2_featured_v2.jpg);
+        background-size: 340px 250px ;
+      background-repeat: no-repeat;
+    }
+    .a7 
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/3/18939473/45ffa777132b19791b0a54ec43446870_o2_featured_v2.jpg);
+        background-size: 340px 250px ;
+      background-repeat: no-repeat;
+    }
+    .a8
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/2/20724592/a97231a7c99e1ef71d546d50581807b4_o2_featured_v2.jpg);
+        background-size: 340px 250px ;
+      background-repeat: no-repeat;
+    }
+    .a9
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/8/20650738/44f5a3bb07e126968d497a6b7ecae8ed_o2_featured_v2.jpg);
+        background-size: 340px 250px ;
+      background-repeat: no-repeat;
+    }
+    .b1
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/chains/3/24913/df62819cdd580e67c729fed8e2d2ea49_o2_featured_v2.jpg);
+        background-size: 340px 250px ;
+      background-repeat: no-repeat;
+    }
+    .b2
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/1/19221011/5ef5ae95dad8b0a50671825c8fa39352_o2_featured_v2.jpg);
+        background-size: 340px 250px ;
+      background-repeat: no-repeat;
+    }
+    .b3
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/4/19625954/39ffbd52c43f4fac1f3b4c285dcbb781_o2_featured_v2.jpg);
+        background-size: 340px 250px ;
+      background-repeat: no-repeat;
+    }
+    .b4
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/chains/6/19090646/d02f8c6957edd2d4bd929a1c53c7b297_o2_featured_v2.jpg);
+        background-size: 340px 250px ;
+        background-repeat: no-repeat;
+    }
+    .b5
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/9/19470209/c1d2f5a96bef52fb6f17200b7c8a8491_o2_featured_v2.jpeg);
+        background-size: 340px 250px ;
+      background-repeat: no-repeat;
+    }
+    .b6
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/chains/4/18386974/35c61bf2c21d1347fa21e063830ef3a3_o2_featured_v2.jpg);
+        background-size: 340px 250px ;
+      background-repeat: no-repeat;
+    }
+    .b7
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/chains/7/20747/87a0193d351d7630aa2c40a809139985_o2_featured_v2.jpg);
+        background-size: 340px 250px ;
+      background-repeat: no-repeat;
+    }
+    .b8
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/9/21539/47d96dea1966f978c8e9c7331c649194_o2_featured_v2.jpg);
+        background-size: 340px 250px ;
+      background-repeat: no-repeat;
+    }
+    .b9
+    {
+        background-image:url(https://b.zmtcdn.com/data/pictures/chains/2/19418342/2a1d62b543591043a7d640f464811427_o2_featured_v2.jpg);
+        background-size: 340px 250px ;
+      background-repeat: no-repeat;
+    }
+
+    .common3:hover
+    {
+        transform: scale(1.02,1);
+        border-radius: 20px;
+        border: 2px solid lightgrey;
+    }
+    .offer
+    {
+        width:80px;
+        height: 20px;
+        background-color:rgb(37, 111, 239);
+        color: white;
+        position: relative;
+        top: 200px;
+    }
+    h4{
+        font-size:20px;
+        position: relative;
+        font-style: normal;
+        top: 240px;
+        left: 10px;
+        opacity: 0.7;
+    }
+    .discount
+    {
+        width: 50px;
+        height: 20px;
+        background-color: green;
+        font-size: 13px;
+        border-radius: 10px;
+        padding: 2px 2px;
+        color: white;
+        top: 219px;
+        left: 280px;
+    }
+    .content1
+    {
+        width: 200px;
+        height: 20px;
+        /* background-color: blue; */
+        position: relative;
+        top: 230px;
+        left: 10px;
+
+    }
+    .content2
+    {
+        width: 120px;
+        height: 20px;
+        /* background-color: blue; */
+        position: relative;
+        top: 210px;
+        left: 250px;
+        opacity: 0.9;
+    }
+    .time
+    {
+        position: relative;
+        top: 220px;
+        left: 290px;
+    }
+    .firstorder
+    {
+        width: 500px;
+        height: 40px;
+        position: relative;
+        /* background-color: brown; */
+        top: 40px;
+        left: 200px;
+        font-size: 30px;
+    }
+    .inside1
+    {
+        width: 1200px;
+        height: 400px;
+        /* background-color:blue; */
+        position: absolute;
+        top:240%;
+        left: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .inside2
+    {
+        width: 1200px;
+        height: 400px;
+        /* background-color:blueviolet; */
+        position: absolute;
+        top:305%;
+        left: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .inside3
+    {
+        width: 1200px;
+        height: 400px;
+        /* background-color:blueviolet; */
+        position: absolute;
+        top:369%;
+        left: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .inside4
+    {
+        width: 1200px;
+        height: 400px;
+        /* background-color:blueviolet; */
+        position: absolute;
+        top:435%;
+        left: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .inside5
+    {
+        width: 1200px;
+        height: 400px;
+        /* background-color:blueviolet; */
+        position: absolute;
+        top:500%;
+        left: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .inside6
+    {
+        width: 1200px;
+        height: 400px;
+        /* background-color:blueviolet; */
+        position: absolute;
+        top:565%;
+        left: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .inside7
+    {
+        width: 1200px;
+        height: 400px;
+        /* background-color:blueviolet; */
+        position: absolute;
+        top:630%;
+        left: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .inside8
+    {
+        width: 1200px;
+        height: 400px;
+        /* background-color:blueviolet; */
+        position: absolute;
+        top:695%;
+        left: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .exploreoptions
+    {
+        width: 100%;
+        height: 500px;
+        background-color:rgba(192, 192, 192, 0.945);
+        position:absolute;
+        top: 760%;
+    }
+    .text2
+    {
+        font-size: 30px;
+        font-style: normal;
+        position: absolute;
+        left: 300px;
+        top: 50px;
+    }
+    .last  select
+    {
+       width: 900px;
+       height: 60px;
+      position: relative;
+      top:100px;
+      margin: 10px;
+      left: 250px;
+      font-size: 20px;
+    
+    }
+    .last1
+    {
+        width: 100%;
+        height: 500px;
+        /* background-color:blue; */
+        position:absolute;
+        top: 830%;
+      
+      
+    }
+    /* .country select{
+        position: absolute;
+        left: 10px;
+    } */
+    .country select{
+        width: 90px;
+        height: 40px;
+        position:relative;
+        left: 80%;
+        border: 1px solid black;
+    }
+    .about
+    {
+        width:200px;
+        height: 300px;
+        /* background-color: blueviolet; */
+        position:absolute;
+        top: 190px;
+        left: 200px;
+        list-style-type: none;
+    }
+    .about1
+    {
+        width:200px;
+        height: 300px;
+        /* background-color:blueviolet; */
+        position:absolute;
+        top: 190px;
+        left: 400px;
+        list-style-type: none;
+    }
+    .about2
+    {
+        width:300px;
+        height: 100px;
+        /* background-color:rgb(49, 226, 43); */
+        position:absolute;
+        top: 190px;
+        left: 600px;
+        list-style-type: none;
+    }
+    .about3
+    {
+        width:300px;
+        height: 100px;
+        /* background-color:pink; */
+        position:absolute;
+        top: 300px;
+        left: 600px;
+        list-style-type: none;
+    }
+    .about4
+    {
+        width:200px;
+        height: 100px;
+        /* background-color:pink; */
+        position:absolute;
+        top: 190px;
+        left: 900px;
+        list-style-type: none;
+    }
+    .about5
+    {
+        width:200px;
+        height: 300px;
+        /* background-color:pink; */
+        position:absolute;
+        top: 190px;
+        left: 1100px;
+        list-style-type: none;
+    }
+    li{
+         opacity: 0.5;
+    }    
+    .google
+    {
+        width: 190px;
+        height: 40px;
+        /* background-color: aqua; */
+        position:relative;
+        top: 20px;
+        background-image: url(https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png);
+        background-repeat: no-repeat;
+        background-size: 190px 40px;
+    }
+    .googleplay
+    {
+        width: 190px;
+        height: 40px;
+        /* background-color: aqua; */
+        position:relative;
+        top: 40px;
+        background-image: url(https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png);
+        background-repeat: no-repeat;
+        background-size: 190px 40px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <div class="zomato">zomato</div>
+        <div class="downlist">
+            <img src="data:image/png;base64,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" alt="img1" >
+            <img src="https://www.creativefabrica.com/wp-content/uploads/2019/02/Search-icon-by-Kanggraphic-1.jpg" alt="img2">
+            <select name="" id="" >
+                <option value="">Kolkata</option>
+                <option value="">Detect current location<br><br>using GPS
+                </option>
+            </select>
+        </div>
+            <input type="text" placeholder="  Search for restaurant, cuisine or a dish">
+            <div class="login"><br>Log in</div>
+            <div class="sign"><br> Sign up</div>
+    </div>
+    <div class="div1">
+        <div class="common">Delivery
+            <div class="in"><img src="https://b.zmtcdn.com/data/o2_assets/c0bb85d3a6347b2ec070a8db694588261616149578.png" alt=""></div>
+          </div>
+        <div class="common">Dining Out
+            <div class="in in1 "><img src="https://b.zmtcdn.com/data/o2_assets/30fa0a844f3ba82073e5f78c65c18b371616149662.png" alt=""></div>
+        </div>
+        <div class="common">Nightlife
+            <div class="in in1"><img src="https://b.zmtcdn.com/data/o2_assets/855687dc64a5e06d737dae45b7f6a13b1616149818.png" alt=""></div>
+        </div>
+    </div>
+    <br><br></br><br><hr>
+    <div class="div2">
+        <div class="child"><h3>Filters</h3></div>
+        <div class="child"><h3>Rating: 4.0+</h3></div>
+        <div class="child"><h3>Pure Veg</h3></div>
+        <div class="child1">
+            <select name="" id="">
+                <option value="">Cuisine</option>
+            </select>
+        </div>
+    </div>
+    <div class="inspiration">
+        <div class="firstorder">Inspiration for your first order</div>
+        <div class="text1">
+            <div class="common1 food1">
+                <div class="textcommon" style="text-align: center;font-size: 20px;">Biryani</div>
+            </div>
+            <div class="common1 food2">
+                <div class="textcommon" >Chicken</div>
+            </div>
+            <div class="common1 food3"><div class="textcommon" >Pizza</div></div>
+            <div class="common1 food4"><div class="textcommon" >Thali</div></div>
+            <div class="common1 food5"><div class="textcommon" >Fried Rice</div></div>
+            <div class="common1 food6"><div class="textcommon" >Burger</div></div>
+        </div>
+    </div>
+    <div class="brands" style="font-size: 30px;">Top brands for you</div>
+    <div class="topbrands">
+        <div class="common2 b1"><div class="brandname">Wow! Momo </div>
+         <div class="tim1">33 min</div></div>
+        <div class="common2 brands2"><div class="brandname">KFC</div>
+        <div class="tim1">29 min</div>  </div>
+        <div class="common2 brands3"><div class="brandname">Chowman</div>
+        <div class="tim1">32 min</div></div>
+        <div class="common2 brands4"><div class="brandname">Arsalan</div>
+        <div class="tim1">29 min</div></div>
+        <div class="common2 brands5"><div class="brandname">Burger King</div>
+        <div class="tim1">32 min</div></div>
+        <div class="common2 brands6"><div class="brandname">Mio Amare</div>
+        <div class="tim1">23 min</div></div>
+    </div>
+    <div class="resturant"  style="font-size: 30px;">Delivery Restaurants in Kolkata</div>
+    <div class="inside">
+      <div class="common3">
+        <div class="common4 abc1">
+            <div class="offer">50% OFF</div> <h4>Bhim Nags Brother Sr...</h4>
+        <div class="discount">&nbsp;&nbsp;3.9⭐</div>
+        <div class="content1"><h3 style="font-size: 16px;top: 0px;" >Misthi,Mithai,Desserts,B..</h3></div>
+        <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 100 for one</h3></div>
+        <div class="time">26 min</div>
+       </div>
+      </div>
+      <div class="common3">
+        <div class="common4 abc2"><div class="offer">50% OFF</div><h4>AnnaRas - Since 1989</h4>
+        <div class="discount">&nbsp;&nbsp;4.5⭐</div>
+        <div class="content1"><h3 style="font-size: 16px;top: 0px;" >Gujarati,Street Food,Des..</h3></div>
+        <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 100 for one</h3></div>
+        <div class="time">35 min</div>
+       </div>
+      </div>
+      <div class="common3">
+        <div class="common4 abc3"><div class="offer">50% OFF</div><h4>AnnaRas - Since 1989</h4>
+        <div class="discount">&nbsp;&nbsp;4.5⭐</div>
+        <div class="content1"><h3 style="font-size: 16px;top: 0px;" >Gujarati,Street Food,Des..</h3></div>
+        <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 100 for one</h3></div>
+        <div class="time">35 min</div></div>
+      </div>
+    </div>
+    <div class="inside1">
+       <div  class="common3 ">
+        <div class="common4 abc4">
+            <div class="offer">50% OFF</div> <h4>Kwality Wall's Frozen</h4>
+            <div class="discount">&nbsp;&nbsp;4.2⭐</div>
+            <div class="content1"><h3 style="font-size: 16px;top: 0px;" >Ice cream</h3></div>
+            <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 100 for one</h3></div>
+            <div class="time">21 min</div>
+       </div>
+       </div>
+       <div class="common3">
+        <div class="common4 abc5"> <div class="offer">50% OFF</div> <h4>Nizam Since 1932.</h4>
+        <div class="discount">&nbsp;&nbsp;4.4⭐</div>
+        <div class="content1"><h3 style="font-size: 16px;top: 0px;" >Biryani,North Indian,Rolls.</h3></div>
+        <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 100 for one</h3></div>
+        <div class="time">45 min</div>
+        </div>
+       </div>
+       <div class="common3" >
+        <div class="common4 abc6"> <div class="offer">200% OFF</div> <h4>Chaigram canteen</h4>
+        <div class="discount">&nbsp;&nbsp;4.0⭐</div>  
+        <div class="content1"><h3 style="font-size: 16px;top: 0px;" >Bengali,kebab,Chinese</h3></div>
+        <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 100 for one</h3></div>
+        <div class="time">43 min</div>
+        </div>
+       </div>
+    </div>
+    <div class="inside2">
+        <div  class="common3 ">
+            <div class="common4 abc7">
+                <div class="offer">50% OFF</div> <h4>Arsalan</h4>
+                <div class="discount">&nbsp;&nbsp;4.2⭐</div>
+                <div class="content1"><h3 style="font-size: 16px;top: 0px;" >Biryani,North Indian,Mug..</h3></div>
+                <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 200 for one</h3></div>
+                <div class="time">41 min</div>
+           </div>
+           </div>
+           <div class="common3">
+            <div class="common4 abc8"> <div class="offer">50% OFF</div> <h4>Buger King</h4>
+            <div class="discount">&nbsp;&nbsp;3.9⭐</div>
+            <div class="content1"><h3 style="font-size: 16px;top: 0px;" >Buger,Fast Food,Dess..</h3></div>
+            <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 200 for one</h3></div>
+            <div class="time">43 min</div>
+            </div>
+           </div>
+           <div class="common3" >
+            <div class="common4 abc9"> <div class="offer">200% OFF</div> <h4>Gupta Brother's</h4>
+            <div class="discount">&nbsp;&nbsp;4.0⭐</div>  
+            <div class="content1"><h3 style="font-size: 16px;top: 0px;" >Misthi,Desserts,North Indian..</h3></div>
+            <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 200 for one</h3></div>
+            <div class="time">23 min</div>
+            </div>
+           </div>
+    </div>
+    <div class="inside3">
+        <div  class="common3 ">
+            <div class="common4 a1">
+                <div class="offer">50% OFF</div> <h4>Chai Break</h4>
+                <div class="discount">&nbsp;&nbsp;4.0⭐</div>
+                <div class="content1"><h3 style="font-size: 16px;top: 0px;" >Continental,Italian..</h3></div>
+                <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 300 for one</h3></div>
+                <div class="time">36 min</div>
+           </div>
+           </div>
+           <div class="common3">
+            <div class="common4 a2"> <div class="offer">50% OFF</div> <h4>Karim's- Original Fro..</h4>
+            <div class="discount">&nbsp;&nbsp;4.2⭐</div>
+            <div class="content1"><h3 style="font-size: 16px;top: 0px;" >Mughali,North Indian.</h3></div>
+            <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 300 for one</h3></div>
+            <div class="time">34 min</div>
+            </div>
+           </div>
+           <div class="common3" >
+            <div class="common4 a3"> <div class="offer">50% OFF</div> <h4>Tandoor-E-Punjab</h4>
+            <div class="discount">&nbsp;&nbsp;3.9⭐</div>  
+            <div class="content1"><h3 style="font-size: 16px;top: 0px;" >Mughali,North Indian.</h3></div>
+            <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 300 for one</h3></div>
+            <div class="time">33 min</div>
+            </div>
+        </div>
+    </div>
+    <div class="inside4">
+        <div  class="common3 ">
+            <div class="common4 a4">
+                <div class="offer">30% OFF</div> <h4>Burping Panda</h4>
+                <div class="discount">&nbsp;&nbsp;3.9⭐</div>
+                <div class="content1"><h3 style="font-size: 16px;top: 0px;" >Chinese,Rolls,Fast.</h3></div>
+                <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 150 for one</h3></div>
+                <div class="time">47 min</div>
+           </div>
+           </div>
+           <div class="common3">
+            <div class="common4 a5"> <div class="offer">50% OFF</div> <h4>Sai Jalpan Function</h4>
+            <div class="discount">&nbsp;&nbsp;4.2⭐</div>
+            <div class="content1"><h3 style="font-size: 16px;top: 0px;" >South Indian,North Indian.</h3></div>
+            <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 150 for one</h3></div>
+            <div class="time">42 min</div>
+            </div>
+           </div>
+           <div class="common3" >
+            <div class="common4 a6"> <div class="offer">50% OFF</div> <h4>Adil Biryani Center</h4>
+            <div class="discount">&nbsp;&nbsp;4.1⭐</div>  
+            <div class="content1"><h3 style="font-size: 16px;top: 0px;" >Biryani,Kebab</h3></div>
+            <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 150 for one</h3></div>
+            <div class="time">36 min</div>
+            </div>
+        </div>
+    </div>
+    <div class="inside5">
+        <div  class="common3 ">
+            <div class="common4 a7">
+                <div class="offer">40% OFF</div> <h4>Rehan's Restaurant</h4>
+                <div class="discount">&nbsp;&nbsp;3.9⭐</div>
+                <div class="content1"><h3 style="font-size: 16px;top: 0px;" >Chinese,North Indian.</h3></div>
+                <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 150 for one</h3></div>
+                <div class="time">47 min</div>
+           </div>
+           </div>
+           <div class="common3">
+            <div class="common4 a8"> <div class="offer">20% OFF</div> <h4>New Arsalan Biryani</h4>
+            <div class="discount">&nbsp;&nbsp;4.2⭐</div>
+            <div class="content1"><h3 style="font-size: 16px;top: 0px;" >South Indian..</h3></div>
+            <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 150 for one</h3></div>
+            <div class="time">62 min</div>
+            </div>
+           </div>
+           <div class="common3" >
+            <div class="common4 a9"> <div class="offer">50% OFF</div> <h4>CakRamon by Gangur </h4>
+            <div class="discount">&nbsp;&nbsp;4.0⭐</div>  
+            <div class="content1"><h3 style="font-size: 16px;top: 0px;" >Cake</h3></div>
+            <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 150 for one</h3></div>
+            <div class="time">36 min</div>
+            </div>
+        </div>
+    </div>
+    <div class="inside6">
+        <div  class="common3 ">
+            <div class="common4 b1">
+                <div class="offer">50% OFF</div> <h4>Amali Beangali</h4>
+                <div class="discount">&nbsp;&nbsp;3.6⭐</div>
+                <div class="content1"><h3 style="font-size: 16px;top: 0px;" >North Indian.</h3>.</div>
+                <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 150 for one</h3></div>
+                <div class="time">27 min</div>
+           </div>
+           </div>
+           <div class="common3">
+            <div class="common4 b2"> <div class="offer">50% OFF</div> <h4>Fried Chicken Wala</h4>
+            <div class="discount">&nbsp;&nbsp;4.2⭐</div>
+            <div class="content1"><h3 style="font-size: 16px;top: 0px;" >Fast Food,Burger.</h3>.</div>
+            <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 150 for one</h3></div>
+            <div class="time">52 min</div>
+            </div>
+           </div>
+           <div class="common3" >
+            <div class="common4 b3"> <div class="offer">50% OFF</div> <h4>Rosy Roti</h4>
+            <div class="discount">&nbsp;&nbsp;4.2⭐</div>  
+            <div class="content1"><h3 style="font-size: 16px;top: 0px;" >North Roti..</h3></div>
+            <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 150 for one</h3></div>
+            <div class="time">60 min</div>
+            </div>
+        </div>
+    </div>
+    <div class="inside7">
+        <div  class="common3 ">
+            <div class="common4 b4">
+                <div class="offer">50% OFF</div> <h4>Fassos Wraps&Rolls</h4>
+                <div class="discount">&nbsp;&nbsp;3.6⭐</div>
+                <div class="content1"><h3 style="font-size: 16px;top: 0px;" >Rolls,Wraps....</h3></div>
+                <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 50 for one</h3></div>
+                <div class="time">27 min</div>
+           </div>
+           </div>
+           <div class="common3">
+            <div class="common4 b5"> <div class="offer">50% OFF</div> <h4>Dreams Cafe</h4>
+            <div class="discount">&nbsp;&nbsp;3.8⭐</div>
+            <div class="content1"><h3 style="font-size: 16px;top: 0px;" >Bevarges,Italian..</h3></div>
+            <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 50 for one</h3></div>
+            <div class="time">32 min</div>
+            </div>
+           </div>
+           <div class="common3" >
+            <div class="common4 b6"> <div class="offer">50% OFF</div> <h4>Punjab Food Function</h4>
+            <div class="discount">&nbsp;&nbsp;4.2⭐</div>  
+            <div class="content1"><h3 style="font-size: 16px;top: 0px;" >North Indian.</h3></div>
+            <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 50 for one</h3></div>
+            <div class="time">46 min</div>
+            </div>
+        </div>
+    </div>
+    <div class="inside8">
+        <div  class="common3 ">
+            <div class="common4 b7">
+                <div class="offer">50% OFF</div> <h4>Indian Restaurant</h4>
+                <div class="discount">&nbsp;&nbsp;4.3⭐</div>
+                <div class="content1"><h3 style="font-size: 16px;top: 0px;" >Indian,Mughali...</h3></div>
+                <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 100 for one</h3></div>
+                <div class="time">27 min</div>
+           </div>
+           </div>
+           <div class="common3">
+            <div class="common4 b8"> <div class="offer">50% OFF</div> <h4>McDonald's</h4>
+            <div class="discount">&nbsp;&nbsp;3.8⭐</div>
+            <div class="content1"><h3 style="font-size: 16px;top: 0px;" >Indian,Mughali..</h3></div>
+            <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 100 for one</h3></div>
+            <div class="time">32 min</div>
+            </div>
+           </div>
+           <div class="common3" >
+            <div class="common4 b9"> <div class="offer">50% OFF</div> <h4>Shangai-Flavours of China</h4>
+            <div class="discount">&nbsp;&nbsp;4.2⭐</div>  
+            <div class="content1"><h3 style="font-size: 16px;top: 0px;" >Chinese,chinuan</h3></div>
+            <div class="content2"><h3 style="font-size: 16px;top: 0px;">&#8377 100 for one</h3></div>
+            <div class="time">46 min</div>
+            </div>
+        </div>
+    </div>
+</div>
+   <div class="exploreoptions">
+       <div class="text2">Explore options near me</div>
+      <div class="last"> <select name="" id="" >
+        <option value="">Popular cuisines near me</option>
+    </select>
+       <select name="" id="2">
+        <option value="">Popular restaurant types near me</option>
+       </select>
+       <select name="" id="3">
+        <option value="">Top  Restaurant Chains</option>
+       </select>
+       <select name="" id="4">
+        <option value="">Cities We Deliver To</option>
+       </select>
+    </div>
+   </div>
+   <div class="last1">
+        <div class="about">
+            <ol></ol>
+            <li style="font-size: 20px;">ABOUT ZOMATO</li><br>
+                <li>Who we are</li><br>
+                <li>Blog</li><br>
+                <li>Work with us</li><br>
+                <li>Investore=s Relations</li><br>
+                <li>Report Fraud</li><br>
+                <li>Press Kit</li><br>
+                <li>Contack Us</li><br>
+          
+        </div>
+        <div class="about1">
+            <ol></ol>
+            <li style="font-size: 20px;">ZOMAVERSE</li><br>
+                <li>Zomato</li><br>
+                <li>Blinkit</li><br>
+                <li>Feeding India</li><br>
+                <li>Hyperpure</li><br>
+                <li>Zomaland</li>
+        </div>
+        <div class="about2">
+            <ol></ol>
+            <li style="font-size: 20px;">ABOUT RESTUARANTS</li><br>
+                <li>Partner With Us</li><br>
+                <li>Apps For You</li><br>
+               
+        </div>
+        <div class="about3">
+            <ol></ol>
+            <li style="font-size: 20px;">FOR ENTERPRISES</li><br>
+                <li>Zomato For Enterprise</li><br>
+               
+        </div>
+        <div class="about4">
+            <ol></ol>
+            <li style="font-size: 20px;">LEARN MORE</li><br>
+                <li style="opacity: 0.5;">Privacy</li><br>
+                <li>Security</li><br>
+                <li>Terms</li><br>
+                <li>Sitemap</li><br> 
+        </div>
+        <div class="about5">
+            <ol></ol>
+            <li style="font-size: 20px;">SOCIAL LINKS</li><br>
+            <div class="google"></div>
+            <div class="googleplay"></div>   
+        </div>
+         <br><br>
+        <div class="zomato">zomato</div>
+    <div class="country">
+        <select name="" id="" >
+            <option value="">India</option>
+        </select>
+           <select name="" id="2">
+            <option value="">English</option>
+            <option value="">English</option>
+            <option value="">Spanish</option>
+            <option value="">Italian</option>
+            <option value="">Indonesian</option>
+            <option value="">Polish</option>
+        </select>
+    </div>
+   
+   
+
+   </div>
+</body>
+</html>

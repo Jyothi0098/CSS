@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .div1
+    {
+        width: 400px;
+        height: 400px;
+        background-color: deeppink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        position: relative;
+        background-image:linear-gradient(to bottom ,purple 2%, deeppink 50%, rgba(255, 0, 0, 0.61)90% );
+        background-repeat:no-repeat;
+        background-size: 400px 400px;
+    }
+    .div2
+    {
+        width: 300px;
+        height: 300px;
+        border: 10px solid white;
+        border-radius:50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .cir
+    {
+        height: 30px;
+        width: 30px;
+        background-color: aliceblue;
+        border-radius: 20px;
+        position: absolute;
+        left: 280px;
+        top: 80px;
+    }
+    .div3
+    {
+        width: 150px;
+        height: 150px;
+        border: 10px solid white;
+        border-radius: 50%;
+        /* position: absolute;
+        top: 100px;
+        left: 90px; */
+
+    }
+    </style>
+</head>
+<body>
+    <div class="div1">
+       <div class="div2">
+        <div class="cir"></div>
+        <div class="div3"></div>
+       </div>
+    </div>
+</body>
+</html>
